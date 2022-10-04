@@ -29,16 +29,27 @@ MonoBehaviour:
     EnableLobbyStatistics: 0
     NetworkLogging: 1
   DevRegion: 
-  PunLogging: 2
+  PunLogging: 0
   EnableSupportLogger: 0
   RunInBackground: 1
   StartInOfflineMode: 0
   RpcList:
+  - ChangeDirection
   - ClickRpc
+  - death
+  - Destroy
   - DestroyRpc
   - DestroySpaceship
   - Fire
+  - FlipSprite_Left
+  - FlipSprite_Right
+  - HealthUpdate
   - RespawnSpaceship
+  - Revive
+  - SendMsg
+  - UpdatePlayerList
+  - YouGotKilledBy
+  - YouKilled
   DisableAutoOpenWizard: 1
   ShowSettings: 0
   DevRegionSetOnce: 0
