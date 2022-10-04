@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviourPunCallbacks {
     private float TimeAmount = 5;
     private bool startRespawn;
     public Text pingrate;
+    public Text PlayerCount;
 
     [HideInInspector]
     public GameObject LocalPlayer;
@@ -59,6 +60,7 @@ public class GameManager : MonoBehaviourPunCallbacks {
             cpCanvas.SetActive(false);
 
         pingrate.text = "NetworkPing : " + PhotonNetwork.GetPing();
+        PlayerCount.text = "PlayerCount : " + PhotonNetwork.CurrentRoom.PlayerCount;
     }
   public  void StartRespawn()
     {

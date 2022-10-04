@@ -38,12 +38,12 @@ public class CameraFollow2D : MonoBehaviour {
 
             transform.position = Vector3.Lerp(transform.position, targetPos + offset, 0.25f);
 
-            transform.position = new Vector3
-             (
-                Mathf.Clamp(transform.position.x, MinBoundary.x, MaxBoundary.x),
-                Mathf.Clamp(transform.position.y, MinBoundary.y, MaxBoundary.y),
-                transform.position.z
-             );
+            //transform.position = new Vector3
+            // (
+            //    Mathf.Clamp(transform.position.x, MinBoundary.x, MaxBoundary.x),
+            //    Mathf.Clamp(transform.position.y, MinBoundary.y, MaxBoundary.y),
+            //    transform.position.z
+            // );
 
         }
     }
